@@ -1,4 +1,6 @@
 ### Hi there 👋
+Leaning computational social science
+
 
 <!--
 **Tom-atok/Tom-atok** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
