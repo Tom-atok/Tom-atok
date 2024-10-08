@@ -1,7 +1,7 @@
 # Welcome to My GitHub Portfolio
-
 ## About Me
-I am a researcher in **Computational Social Science**, with a focus on communication. My primary interest lies in using **Natural Language Processing (NLP)** techniques to quantitatively measure **collective consciousness** within social groups. By leveraging the power of data science and IT, I aim to advance research in the **humanities** and **social sciences**.
+I am a researcher in **Computational Social Science**, with a focus on communication. My primary interest lies in using **Natural Language Processing (NLP)** techniques to quantitatively measure **collective consciousness** within social groups. By leveraging the power of data science and IT, I aim to advance research in the **humanities** and **social sciences**, particularly by promoting the use of NLP techniques in **Japanese** and encouraging their broader application in the field of **social sciences**.
+
 
 ## Skills
 - **Programming Languages**: Python
