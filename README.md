@@ -21,11 +21,6 @@ This project involved analyzing user-generated content on the popular Japanese b
 ### 2. **Google Colaboratory Notebooks for Humanities and Social Sciences**
 I believe that IT technologies have significant potential to enhance research in the **humanities** and **social sciences**. As part of my effort to bridge the gap between these disciplines and data science, I have created several **Google Colaboratory notebooks** that demonstrate the application of machine learning and data analysis in these fields.
 
-- **Key Notebooks**:
-    - Topic modeling in social media
-    - Analyzing literary text using NLP
-    - Quantifying group sentiment using public data
-
 [https://github.com/Tom-atok/Tom-atok/tree/master/colab_notebooks](https://github.com/Tom-atok/Tom-atok/tree/master/colab_notebooks)
 
 ## Wiki & IT Hacks
