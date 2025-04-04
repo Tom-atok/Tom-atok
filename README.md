@@ -4,8 +4,7 @@ I am a researcher in **Computational Social Science**, with a focus on communica
 
 
 ## Skills
-- **Programming Languages**: Python
-- **Data Science Tools**: Jupyter Notebooks, Google Colab, Pandas, Scikit-learn, Gensim
+- **Programming Languages**: Python, R
 - **NLP Techniques**: Topic modeling, LDA, Word Embeddings, Large Language Models (LLMs)
 - **Research Interests**: Communication analysis, Collective consciousness, Quantitative research
 
