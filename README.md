@@ -26,7 +26,7 @@ To tackle these, I combine:
 - **Sociological reconstruction of communication theory** — formalising conversational norms and power dynamics into testable constructs
 - Computational lenses on **collective consciousness** and meaning‑making
 
-My goal is to bridge the creativity of sociological theory with the rigor of data‑intensive methods—and to share the tools so others can do the same. is to bridge the creativity of sociological theory with the rigor of data‑intensive methods—and to share the tools so others can do the same.
+My goal is to bridge the creativity of sociological theory with the rigor of data‑intensive methods and to share the tools so others can do the same. 
 
 ---
 
