@@ -49,7 +49,7 @@ My goal is to bridge the creativity of sociological theory with the rigor of dat
 | 2025 | **Whisper‑Driven Interview Transcription Pipeline**  | End‑to‑end Colab workflow: audio segmentation → Whisper → speaker diarization → structured JSON → Zotero integration.                   | Python, OpenAI API, PyAnnote, Pandas, Google Drive API |
 | 2024 | **note.com Discourse Analysis**                      | Identified topic clusters & sentiment dynamics in 1.2 M posts on Japanese platform *note*; presented at JSS Spring 2024.                | Gensim, spaCy‑ja, WordCloud, Matplotlib                |
 
-➡︎ Full list & code: see pinned repositories or the [`projects/`](./projects) directory.
+➡︎ Full list & code: see pinned repositories or the [`projects/`](./projects) directory.(Work-in-progress)
 
 ---
 
