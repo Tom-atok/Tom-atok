@@ -2,7 +2,9 @@
 
 **Computational Social Scientist · NLP Analysis Enthusiast**\
 *M.S. student — Tokyo, Japan*
+
 This page is updated on 2025-04-25
+
 ---
 
 ## 🎯 Research Focus
