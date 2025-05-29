@@ -77,7 +77,7 @@ I maintain a living **[GitHub Wiki](https://github.com/Tom-atok/Tom-atok/wiki)*
 - **Tobimatsu, Tomoki. 2024.** “Computational Mapping of Discourse Using À‑la‑Carte Word Embeddings: A Case of Japanese Blog Posts on Veganism.”／「アラカルト単語埋め込みモデルによる言説空間の計算論的把握—ヴィーガンについての日本語ブログ記事を対象として—」\
   *Poster, 78th Academic Conference on Japanese Association for Mathematical Sociology) (日本数理社会学会ポスター発表).*
 - **“Social Worlds in Code: Building Virtual Societies with LLM Agents.”**／「社会を作って観る—大規模言語モデルと挑む社会学実験—」\
-  Public Lecture / 公開講演 (May 2025, scheduled).
+  Public Lecture / 公開講演 (May 2025).
 
 ---
 
