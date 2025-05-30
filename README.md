@@ -69,15 +69,18 @@ I maintain a living **[GitHub Wiki](https://github.com/Tom-atok/Tom-atok/wiki)*
 ---
 
 ## 📰 Recent Talks & Publications *(EN / JA)*
+### Takls
+- Tobimatsu, Tomoki. 2024. “Applying Topic‑Model Analysis for the Quantitative Mapping of Discourse Space.” *77th Academic Conference on Japanese Association for Mathematical Sociology, Poster*. \
+  飛松大騎，2024，「言説空間の数量的把握に向けたトピックモデル分析の応用」，*第77回日本数理社会学会大会，ポスター発表.*
+- Tobimatsu, Tomoki. 2024. “Quantitative Analysis of Online Discourse on Food.”*Oral, 97th Academic Conference on the Japan Sociological Society.* \
+  飛松大騎，2024，「食をめぐるオンライン上の言説空間の定量的分析」，*第97回日本社会学会大会，口頭発表.*
+- Tobimatsu, Tomoki. 2024. “Computational Mapping of Discourse Using À‑la‑Carte Word Embeddings: A Case of Japanese Blog Posts on Veganism.” *Poster, 78th Academic Conference on Japanese Association for Mathematical Sociology.* \
+  飛松大騎，2024，「アラカルト単語埋め込みモデルによる言説空間の計算論的把握—ヴィーガンについての日本語ブログ記事を対象として—，*第78回日本数理社会学会大会， ポスター発表.*
+- Tobimatsu, Tomoki. 2025,05,25.“Social Worlds in Code: Building Virtual Societies with LLM Agents.”，*Public Lecture, UTokyo Research Frontiers: 10-Minute Talk.* \
+  飛松大騎，2025,05,25，「社会を作って観る—大規模言語モデルと挑む社会学実験—」(10分で伝えます！東大研究最前線・公開講演).*
+- Tobimatsu, Tomoki. 2025. "The Dynamics of Immigrant Cultural Transformation through Food: A Study of Zainichi Korean Culture in Osaka Koreatown", *"Super-Diversifying Communities and People's Practices: Fieldwork in Ikuno Ward, Osaka City"*\
+  飛松大騎, 2025, "食にみる移民文化変容のダイナミズムー大阪コリアタウンの在日コリアン文化を対象としてー," *超多様化する地域と人びとの実践ー大阪市生野区をフィールドとしてー*，137-147.
 
-- **Tobimatsu, Tomoki. 2024.** “Applying Topic‑Model Analysis for the Quantitative Mapping of Discourse Space.”／「言説空間の数量的把握に向けたトピックモデル分析の応用」\
-  *Poster, 77th Academic Conference on Japanese Association for Mathematical Sociology)* (日本数理社会学会ポスター発表).
-- **Tobimatsu, Tomoki. 2024.** “Quantitative Analysis of Online Discourse on Food.”／「食をめぐるオンライン上の言説空間の定量的分析」\
-  *Oral, 97th Academic Conference on the Japan Sociological Society* (日本社会学会大会・口頭発表).
-- **Tobimatsu, Tomoki. 2024.** “Computational Mapping of Discourse Using À‑la‑Carte Word Embeddings: A Case of Japanese Blog Posts on Veganism.”／「アラカルト単語埋め込みモデルによる言説空間の計算論的把握—ヴィーガンについての日本語ブログ記事を対象として—」\
-  *Poster, 78th Academic Conference on Japanese Association for Mathematical Sociology) (日本数理社会学会ポスター発表).*
-- **“Social Worlds in Code: Building Virtual Societies with LLM Agents.”**／「社会を作って観る—大規模言語モデルと挑む社会学実験—」\
-  Public Lecture / 公開講演 (May 2025).
 
 ---
 
