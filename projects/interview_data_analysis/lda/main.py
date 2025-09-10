@@ -7,6 +7,7 @@ import os
 import pickle
 import numpy as np
 import pandas as pd
+import argparse
 from sklearn.decomposition import LatentDirichletAllocation
 from gensim.models import CoherenceModel
 import matplotlib.pyplot as plt
@@ -371,12 +372,29 @@ class LDAAnalyzer:
     
     def create_wordclouds(self, output_dir: str = "results"):
         """
-        各トピックのワードクラウドを作成
+        各トピックのワードクラウドを一つの図表に作成
         
         Args:
             output_dir: 出力ディレクトリ
         """
         os.makedirs(output_dir, exist_ok=True)
+        
+        # サブプロットのレイアウトを計算
+        n_cols = min(3, self.n_topics)  # 最大3列
+        n_rows = (self.n_topics + n_cols - 1) // n_cols  # 必要な行数を計算
+        
+        # 全体の図を作成
+        fig, axes = plt.subplots(n_rows, n_cols, figsize=(5*n_cols, 4*n_rows))
+        
+        # axesを常に2次元配列として扱う
+        if self.n_topics == 1:
+            axes = np.array([[axes]])
+        elif n_rows == 1 and n_cols == 1:
+            axes = np.array([[axes]])
+        elif n_rows == 1:
+            axes = axes.reshape(1, -1)
+        elif n_cols == 1:
+            axes = axes.reshape(-1, 1)
         
         for topic_idx in range(self.n_topics):
             # トピックの単語と重みを取得
@@ -387,22 +405,34 @@ class LDAAnalyzer:
             # ワードクラウドを生成
             wordcloud = WordCloud(
                 font_path='/System/Library/Fonts/Hiragino Sans GB.ttc',  # macOS用
-                width=800,
-                height=400,
+                width=400,
+                height=300,
                 background_color='white',
-                max_words=50
+                max_words=30
             ).generate_from_frequencies(word_weights)
             
-            # 保存
-            plt.figure(figsize=(10, 5))
-            plt.imshow(wordcloud, interpolation='bilinear')
-            plt.axis('off')
-            plt.title(f'Topic {topic_idx + 1} Word Cloud')
-            plt.savefig(os.path.join(output_dir, f'wordcloud_topic_{topic_idx + 1}.png'), 
-                       dpi=300, bbox_inches='tight')
-            plt.close()
+            # サブプロットの位置を計算
+            row = topic_idx // n_cols
+            col = topic_idx % n_cols
+            
+            # ワードクラウドを表示
+            ax = axes[row, col]
+            ax.imshow(wordcloud, interpolation='bilinear')
+            ax.axis('off')
+            ax.set_title(f'Topic {topic_idx + 1}', fontsize=12, pad=10)
         
-        print(f"ワードクラウドを {output_dir} に保存しました")
+        # 余分なサブプロットを非表示にする
+        for idx in range(self.n_topics, n_rows * n_cols):
+            row = idx // n_cols
+            col = idx % n_cols
+            axes[row, col].axis('off')
+        
+        plt.tight_layout()
+        plt.savefig(os.path.join(output_dir, 'combined_wordcloud.png'), 
+                   dpi=300, bbox_inches='tight')
+        plt.close()
+        
+        print(f"統合ワードクラウドを {output_dir} に保存しました")
     
     def save_results(self, output_dir: str = "results"):
         """
@@ -509,20 +539,38 @@ def find_optimal_topics(processed_data_dir: str, max_topics: int = 10):
 
 def main():
     """メイン処理"""
+    # コマンドライン引数の解析
+    parser = argparse.ArgumentParser(description='LDA分析を実行')
+    parser.add_argument('--n_topics', type=int, default=5, 
+                       help='トピック数 (デフォルト: 5)')
+    parser.add_argument('--optimize_topics', action='store_true',
+                       help='最適なトピック数を自動探索する')
+    parser.add_argument('--processed_data_dir', type=str, default='processed_data',
+                       help='前処理済みデータのディレクトリ (デフォルト: processed_data)')
+    parser.add_argument('--results_dir', type=str, default='results',
+                       help='結果出力ディレクトリ (デフォルト: results)')
+    
+    args = parser.parse_args()
+    
     # 設定
-    processed_data_dir = "processed_data"  # 現在のディレクトリ内
-    results_dir = "results"  # 現在のディレクトリ内
-    n_topics = 5  # デフォルトのトピック数
+    processed_data_dir = args.processed_data_dir
+    results_dir = args.results_dir
+    n_topics = args.n_topics
+    
+    print(f"指定されたトピック数: {n_topics}")
     
     # 最適なトピック数を探索（オプション）
-    print("最適なトピック数を探索中...")
-    try:
-        optimal_topics = find_optimal_topics(processed_data_dir)
-        n_topics = optimal_topics
-        print(f"最適なトピック数 {n_topics} を使用します")
-    except Exception as e:
-        print(f"トピック数最適化でエラーが発生しました: {e}")
-        print("デフォルトのトピック数 5 を使用します")
+    if args.optimize_topics:
+        print("最適なトピック数を探索中...")
+        try:
+            optimal_topics = find_optimal_topics(processed_data_dir)
+            n_topics = optimal_topics
+            print(f"最適なトピック数 {n_topics} を使用します")
+        except Exception as e:
+            print(f"トピック数最適化でエラーが発生しました: {e}")
+            print(f"指定されたトピック数 {args.n_topics} を使用します")
+    else:
+        print(f"指定されたトピック数 {n_topics} を使用します")
     
     # LDA分析器を初期化
     analyzer = LDAAnalyzer(n_topics=n_topics)
