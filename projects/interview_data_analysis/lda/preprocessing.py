@@ -468,7 +468,7 @@ class TextPreprocessor:
 def main():
     """メイン処理"""
     # 設定
-    data_dir = "data"
+    data_dir = "../data"  # 上位ディレクトリのdataフォルダを参照
     output_dir = "processed_data"
     
     # 前処理器を初期化（自動ストップワード生成を有効化）

@@ -510,8 +510,8 @@ def find_optimal_topics(processed_data_dir: str, max_topics: int = 10):
 def main():
     """メイン処理"""
     # 設定
-    processed_data_dir = "processed_data"
-    results_dir = "results"
+    processed_data_dir = "processed_data"  # 現在のディレクトリ内
+    results_dir = "results"  # 現在のディレクトリ内
     n_topics = 5  # デフォルトのトピック数
     
     # 最適なトピック数を探索（オプション）

@@ -98,7 +98,7 @@ def run_lda_analysis(n_topics=None):
 
 def check_data_directory():
     """dataディレクトリとテキストファイルの存在をチェック"""
-    data_dir = Path("data")
+    data_dir = Path("../data")  # 上位ディレクトリのdataフォルダを参照
     
     if not data_dir.exists():
         print("エラー: dataディレクトリが見つかりません")
